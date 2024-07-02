@@ -1,0 +1,21 @@
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Price</th>
+      <th>inStock</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- @for (item of products$; track $index) {
+    <tr>
+      <td>{{ item.Id }}</td>
+      <td>{{ item.Title }}</td>
+      <td>{{ item.Price }}</td>
+      <td>{{ item.inStock }}</td>
+    </tr>
+    } -->
+    <p>{{ products$ | async }}</p>
+  </tbody>
+</table>
